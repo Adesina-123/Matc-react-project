@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    background-color: rgb(103, 194, 103);
+    height: 70px;
+    display: flex;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #f3f3f3;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .main-board {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
   }
-}
+  
+  .activity-form {
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+  }
+  
+  .form-input:active,
+  .form-input:focus {
+    border: 1px solid green;
+  }
+  
+  .form-button {
+    background-color: greenyellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .form-button:active {
+    border: 2px solid rgb(37, 37, 37);
+    outline: none;
+  }
+  
+  .activity-list-title {
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+  
+  .task-count {
+    font-weight: lighter;
+    font-size: 0.7em;
+  }
+  
+  .activity-list {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .activity-list-item {
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .strike-through {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  .checkbox {
+    margin-left: 5px;
+  }
+  .trash {
+    color: grey;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .trash:hover {
+    color: red;
+  }
